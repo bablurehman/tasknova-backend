@@ -12,7 +12,12 @@ const app = express();
 
 await connectDB();
 
-app.use(cors({ origin: 'https://tasknovaa.vercel.app', credentials: true }));
+app.use(
+  cors({
+    origin: ["http://localhost:3001", "https://tasknova.vercel.app"],
+    credentials: true,
+  }),
+);
 app.use(express.json());
 
 // API Routes
