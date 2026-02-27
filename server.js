@@ -14,7 +14,7 @@ await connectDB();
 
 app.use(
   cors({
-    origin: ["http://localhost:3001", "https://tasknova.vercel.app"],
+    origin: ["http://localhost:3001", "https://tasknovaa.vercel.app"],
     credentials: true,
   }),
 );
